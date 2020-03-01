@@ -1,0 +1,20 @@
+{
+    "broker": {
+        "num.partitions": 8,
+        "default.replication.factor": 3,
+        "log.dir": "/tmp",
+        "auto.create.topics.enable": false,
+        "min.insync.replicas": 2,
+        "queued.max.requests": 500
+    },
+    "instance": {
+        "type": "AWS r3.4xlarge",
+        "count": 10
+    },
+    "performance": {
+        "mb_in_per_second": 50,
+        "mb_out_per_second": 200,
+        "messages_in_per_second": 12000,
+        "avg_cpu": 45
+    }
+}
